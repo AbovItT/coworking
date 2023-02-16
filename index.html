@@ -1,0 +1,688 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/dist/output.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
+    <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
+    <link rel="stylesheet" href="https://rawgit.com/LeshikJanz/libraries/master/Bootstrap/baguetteBox.min.css">
+    <title>CoWorking Space</title>
+</head>
+
+<body class="h-[5000px]">
+    <!-- Header -->
+    <header class="fixed w-full z-50" id="mastHeader">
+        <main class="before__header">
+            <div class="flex justify-between max-w-screen-xl mx-auto">
+                <div>
+                    <ul class="social__icons">
+                        <li>
+                            <a target="_blank" href="">
+                                <i class="fa-brands fa-facebook-f"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a target="_blank" href="">
+                                <i class="fa-brands fa-instagram"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a target="_blank" href="">
+                                <i class="fa-brands fa-linkedin"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a target="_blank" href="">
+                                <i class="fa-brands fa-tiktok"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="flex justify-center items-center">
+                    <ul class="text-white flex space-x-5 text-sm font-montserrat">
+                        <li class="hover:text-blue-400 transition-all duration-300">
+                            <a href="tel:+37493393345">Հեռ․։+374 93 39 33 45</a>
+                        </li>
+                        <li class="hover:text-blue-400 transition-all duration-300">
+                            <a href="mailto:info@abovacademy.com">Էլ․Հասցե։info@abovacademy.com</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </main>
+        <div class="py-5 container-fluid fixed max-lg:p-5 max-lg:top-0 top-12 w-full flex justify-center transition-all duration-300 z-50 ease-linear bg-[#808080]/50"
+            id="header__section">
+            <div class="container">
+                <nav id="nav" class="w-full" role="navigation">
+                    <div class="container mx-auto overflow-hidden xl:p-5 flex flex-wrap items-center md:flex-no-wrap">
+                        <div class="mr-4 md:mr-8">
+                            <a href="" rel="home" class="text-white text-2xl font-montserrat">
+                                <img src="" class="w-full h-16 hidden" alt="">
+                                CoWorking Space
+                            </a>
+                        </div>
+                        <div class="ml-auto xl:hidden">
+                            <button onclick="menuToggle()" class="flex items-center px-3 py-2 border rounded"
+                                type="button">
+                                <svg class="h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill="black" d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
+                                </svg>
+                            </button>
+                        </div>
+                        <div id="menu"
+                            class="w-full h-0 transition-all ease-out duration-500 xl:transition-none xl:w-auto xl:flex-grow xl:flex xl:items-center max-xl:overflow-hidden">
+                            <ul id="ulMenu"
+                                class="flex flex-col space-y-2 duration-300 ease-linear sm:transition-none mt-0 mx-4 xl:flex-row xl:items-center xl:mx-0 xl:ml-auto xl:mt-0 xl:pt-0 xl:border-0 xl:space-x-6">
+                                <li class="header-link">
+                                    <a href="#banner">
+                                        Գլխավոր
+                                    </a>
+                                </li>
+                                <li class="header-link">
+                                    <a href="#pricing">
+                                        Փաթեթներ
+                                    </a>
+                                </li>
+                                <li class="header-link">
+                                    <a href="#contactus">
+                                        Կապ Մեզ Հետ
+                                    </a>
+                                </li>
+                                <li class="header-link">
+                                    <a href="#events">
+                                        Իրադարձություններ
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="max-lg:py-1 max-lg:px-3 border-2 border-transparent bg-mainColor text-white py-2 px-5 transition-all duration-300 hover:bg-transparent hover:border-white"
+                                        href="">
+                                        Ամրագրել
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <!-- Header End -->
+
+    <!-- Banner -->
+    <section class="overflow-hidden">
+        <div class="w-full h-[750px] max-lg:h-[500px] overflow-hidden bg-mainColor particles">
+            <div id="elements" class="w-full h-[750px] max-lg:h-[500px] absolute inset-0 text">
+                <div class="flex absolute justify-end w-full h-full items-center pointer-events-none">
+                    <div class="md:w-full p-10 lg:p-20 pt-20 rellax w-full" data-rellax-speed="1">
+                        <div class="w-1/2 flex flex-col space-y-3 text-white max-lg:w-full">
+                            <h2 class="text-3xl font-montserrat-bold max-lg:text-lg">
+                                Լավագույն համատեղ աշխատանքային տարածքները
+                                CoWorking Space-ում
+                            </h2>
+                            <p class="font-montserrat-extralight max-lg:text-sm">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate quos cumque repellat
+                                fugit sed dicta exercitationem totam! Id iusto quidem molestias, beatae, nam sint
+                                eligendi
+                                officiis aspernatur dicta quis molestiae!
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Banner End -->
+
+    <!-- Main Content -->
+    <section class="bg-[#261f25] bg-[url(/public/images/counter-bg.png)] h-auto w-full py-20">
+        <main class="max-w-screen-xl mx-auto font-montserrat uppercase">
+            <div class="flex flex-col space-y-5 mb-20">
+                <p class="text-center text-white font-montserrat-extralight">ՄԵզ Մոտ Կա </p>
+                <h2 class="text-center text-4xl text-white font-montserrat-bold max-lg:text-xl">ՄԵՆՔ ԿԱՌՈՒՑՈՒՄ ԵՆՔ ԱՊԱԳԱՅԻ
+                    ՊԱՏՐԱՍՏ ԹՎԱՅԻՆ ՎԵԲ ՍՏՈՒԴԻԱ ԵՎ ՀԱՐԹԱԿՆԵՐ</h2>
+            </div>
+            <div class="text-gray-700 max-lg:px-10">
+                <div class="container mx-auto">
+                    <div class="flex flex-wrap -m-4 text-center">
+                        <div class="p-4 md:w-1/4 sm:w-1/2 w-full cursor-pointer">
+                            <div
+                                class="border-2 flex flex-col justify-center items-center space-y-5 border-[#808080] px-4 py-6 rounded-lg transform transition duration-500 hover:scale-110">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke-width="1.5" stroke="mainColor" class="w-20 h-20 stroke-mainColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M8.288 15.038a5.25 5.25 0 017.424 0M5.106 11.856c3.807-3.808 9.98-3.808 13.788 0M1.924 8.674c5.565-5.565 14.587-5.565 20.152 0M12.53 18.22l-.53.53-.53-.53a.75.75 0 011.06 0z" />
+                                </svg>
+                                <div>
+                                    <p class="leading-relaxed text-white">ԱՆՎՃԱՐ WIFI</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="p-4 md:w-1/4 sm:w-1/2 w-full cursor-pointer">
+                            <div
+                                class="border-2 flex flex-col justify-center items-center space-y-5 border-[#808080] px-4 py-6 rounded-lg transform transition duration-500 hover:scale-110">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke-width="1.5" stroke="mainColor" class="w-20 h-20 stroke-mainColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M15 19.128a9.38 9.38 0 002.625.372 9.337 9.337 0 004.121-.952 4.125 4.125 0 00-7.533-2.493M15 19.128v-.003c0-1.113-.285-2.16-.786-3.07M15 19.128v.106A12.318 12.318 0 018.624 21c-2.331 0-4.512-.645-6.374-1.766l-.001-.109a6.375 6.375 0 0111.964-3.07M12 6.375a3.375 3.375 0 11-6.75 0 3.375 3.375 0 016.75 0zm8.25 2.25a2.625 2.625 0 11-5.25 0 2.625 2.625 0 015.25 0z" />
+                                </svg>
+                                <div>
+                                    <p class="leading-relaxed text-white">Conference Room</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="p-4 md:w-1/4 sm:w-1/2 w-full cursor-pointer">
+                            <div
+                                class="border-2 flex flex-col justify-center items-center space-y-5 border-[#808080] px-4 py-6 rounded-lg transform transition duration-500 hover:scale-110">
+                                <i class="fa-solid fa-mug-hot text-[80px] text-mainColor"></i>
+                                <div>
+                                    <p class="leading-relaxed text-white">Սուրճ, թեյ</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="p-4 md:w-1/4 sm:w-1/2 w-full cursor-pointer">
+                            <div
+                                class="border-2 flex flex-col justify-center items-center space-y-5 border-[#808080] px-4 py-6 rounded-lg transform transition duration-500 hover:scale-110">
+                                <i class="fa-solid fa-brain text-[80px] text-mainColor"></i>
+                                <div>
+                                    <p class="leading-relaxed text-white">Խմբային միջոցառումներ</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </section>
+    <section class="max-w-screen-xl mx-auto gallery-container">
+        <div class="tz-gallery max-lg:px-10">
+            <section class="pb-8">
+                <div class="flex flex-wrap -mx-4">
+                    <a class="lightbox hidden md:block md:w-1/2 px-4"
+                        href="https://raw.githubusercontent.com/LeshikJanz/libraries/master/Related%20images/Bootstrap%20example/bridge.jpg">
+                        <img src="https://raw.githubusercontent.com/LeshikJanz/libraries/master/Related%20images/Bootstrap%20example/bridge.jpg"
+                            alt="Bridge" class="h-full">
+                    </a>
+                    <div class="md:w-1/2 h-auto px-4 flex flex-col space-y-10">
+                        <a class="lightbox"
+                            href="https://raw.githubusercontent.com/LeshikJanz/libraries/master/Related%20images/Bootstrap%20example/bridge.jpg">
+                            <img src="https://raw.githubusercontent.com/LeshikJanz/libraries/master/Related%20images/Bootstrap%20example/bridge.jpg"
+                                alt="Bridge">
+                        </a>
+                        <a class="lightbox"
+                            href="https://raw.githubusercontent.com/LeshikJanz/libraries/master/Related%20images/Bootstrap%20example/bridge.jpg">
+                            <img src="https://raw.githubusercontent.com/LeshikJanz/libraries/master/Related%20images/Bootstrap%20example/bridge.jpg"
+                                alt="Bridge">
+                        </a>
+                    </div>
+                </div>
+            </section>
+            <div class="flex flex-wrap max-lg:flex-col max-lg:space-y-10 justify-between">
+                <div class="sm:w-full md:w-[32%] mb-10">
+                    <a class="lightbox"
+                        href="https://raw.githubusercontent.com/LeshikJanz/libraries/master/Related%20images/Bootstrap%20example/bridge.jpg">
+                        <img src="https://raw.githubusercontent.com/LeshikJanz/libraries/master/Related%20images/Bootstrap%20example/bridge.jpg"
+                            alt="Bridge">
+                    </a>
+                </div>
+                <div class="sm:w-full md:w-[32%]">
+                    <a class="lightbox"
+                        href="https://raw.githubusercontent.com/LeshikJanz/libraries/master/Related%20images/Bootstrap%20example/park.jpg">
+                        <img src="https://raw.githubusercontent.com/LeshikJanz/libraries/master/Related%20images/Bootstrap%20example/park.jpg"
+                            alt="Park">
+                    </a>
+                </div>
+                <div class="sm:w-full md:w-[32%]">
+                    <a class="lightbox"
+                        href="https://raw.githubusercontent.com/LeshikJanz/libraries/master/Related%20images/Bootstrap%20example/tunnel.jpg">
+                        <img src="https://raw.githubusercontent.com/LeshikJanz/libraries/master/Related%20images/Bootstrap%20example/tunnel.jpg"
+                            alt="Tunnel">
+                    </a>
+                </div>
+                <div class="sm:w-full md:w-[32%]">
+                    <a class="lightbox"
+                        href="https://raw.githubusercontent.com/LeshikJanz/libraries/master/Related%20images/Bootstrap%20example/traffic.jpg">
+                        <img src="https://raw.githubusercontent.com/LeshikJanz/libraries/master/Related%20images/Bootstrap%20example/traffic.jpg"
+                            alt="Traffic">
+                    </a>
+                </div>
+                <div class="sm:w-full md:w-[32%]">
+                    <a class="lightbox"
+                        href="https://raw.githubusercontent.com/LeshikJanz/libraries/master/Related%20images/Bootstrap%20example/rails.jpg">
+                        <img src="https://raw.githubusercontent.com/LeshikJanz/libraries/master/Related%20images/Bootstrap%20example/rails.jpg"
+                            alt="Coast">
+                    </a>
+                </div>
+                <div class="sm:w-full md:w-[32%]">
+                    <a class="lightbox"
+                        href="https://raw.githubusercontent.com/LeshikJanz/libraries/master/Related%20images/Bootstrap%20example/coast.jpg">
+                        <img src="https://raw.githubusercontent.com/LeshikJanz/libraries/master/Related%20images/Bootstrap%20example/coast.jpg"
+                            alt="Rails">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="bg-[#261f25] bg-[url(/public/images/right.png)] my-20 max-lg:my-10 bg-no-repeat bg-cover bg-left max-lg:bg-[url()]">
+        <main class="max-w-screen-xl mx-auto">
+            <div class="container mx-auto px-4 py-24">
+                <header class="text-center mb-16 text-white ">
+                    <h1 class="text-5xl mb-4 font-montserrat-extrabold">Փաթեթներ</h1>
+                </header>
+                <div class="lg:flex lg:items-center lg:-mx-2 text-white">
+                    <div class="mb-4 lg:mb-0 lg:w-1/3 lg:px-2">
+                        <div class="text-center border p-10 rounded">
+                            <h2 class="text-lg mb-4 font-montserrat-bold">Օրեկան Փաթեթ</h2>
+                            <div class="mb-6">
+                                <span class="block text-5xl pb-2 font-montserrat-light">3000֏</span>
+                                <span class="text-sm font-montserrat-thin">Օրեկան</span>
+                            </div>
+                            <ul class="leading-loose list-reset mb-6">
+                                <li><i class="fa-solid fa-wifi"></i> WIFI</li>
+                                <li><i class="fa-solid fa-mug-hot"></i> Սուրճ, Թեյ</li>
+                                <li><i class="fa-solid fa-kitchen-set"></i> Խոհանոցից Օգտվել</li>
+                                <li><i class="fa-solid fa-percent"></i> 20% զեղչ Conference Room - ի Համար</li>
+                            </ul>
+                            <a class="text-sm tracking-wide uppercase inline-block border hover:text-black hover:bg-white transition-all duration-300 font-montserrat-semibold font-bold w-full p-3 rounded no-underline"
+                                href="#">Ամրագրել</a>
+                        </div>
+                    </div>
+                    <div class="mb-4 lg:mb-0 lg:w-1/3 lg:px-2">
+                        <div class="text-center border p-10 lg:py-16 rounded lg:shadow-lg">
+                            <h2 class="text-xl mb-4 font-montserrat-bold text-[#FFDD00]">VIP Փաթեթ</h2>
+                            <div class="mb-6">
+                                <span class="block text-5xl pb-2 font-montserrat-light">60,000֏</span>
+                                <span class="text-sm text-grey font-montserrat-thin">Ամսեկան</span>
+                            </div>
+                            <ul class="text-grey-dark leading-loose list-reset mb-6 font-montserrat-extralight">
+                                <li><i class="fa-solid fa-wifi"></i> WIFI</li>
+                                <li><i class="fa-solid fa-mug-hot"></i> Սուրճ, Թեյ</li>
+                                <li><i class="fa-solid fa-kitchen-set"></i> Խոհանոցից Օգտվել</li>
+                                <li><i class="fa-solid fa-users"></i> Conference Room: 8 Ժամ Անվճար</li>
+                            </ul>
+                            <a class="hover:text-black hover:bg-white transition-all duration-300 text-sm tracking-wide uppercase inline-block border font-montserrat-semibold lg:hover:bg-red-dark lg:text-white font-bold w-full p-3 rounded no-underline"
+                                href="#">Ամրագրել</a>
+                        </div>
+                    </div>
+                    <div class="mb-4 lg:mb-0 lg:w-1/3 lg:px-2">
+                        <div class="text-center border border-grey-light p-10 rounded">
+                            <h2 class="text-lg mb-4 font-montserrat-bold">Ամսեկան Փաթեթ</h2>
+                            <div class="mb-6">
+                                <span class="block text-5xl pb-2 font-montserrat-light">30,000֏</span>
+                                <span class="text-sm text-grey font-montserrat-thin">Ամսեկան</span>
+                            </div>
+                            <ul class="leading-loose list-reset mb-6">
+                                <li><i class="fa-solid fa-wifi"></i> WIFI</li>
+                                <li><i class="fa-solid fa-mug-hot"></i> Սուրճ, Թեյ</li>
+                                <li><i class="fa-solid fa-kitchen-set"></i> Խոհանոցից Օգտվել</li>
+                                <li><i class="fa-solid fa-percent"></i> 20% զեղչ Conference Room - ի Համար</li>
+                            </ul>
+                            <a class="hover:text-black hover:bg-white transition-all duration-300 text-sm tracking-wide uppercase inline-block border font-montserrat-semibold font-bold w-full p-3 rounded no-underline"
+                                href="#">Ամրագրել</a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </main>
+    </section>
+    <section class="max-w-screen-xl mx-auto mb-10">
+        <div class="flex max-lg:block max-lg:space-x-0 max-lg:px-10 space-x-20">
+            <div class="w-1/3 max-lg:w-full">
+                <ul class="font-montserrat">
+                    <li class="flex justify-between py-10">
+                        <span>Ժամավճար</span>
+                        <span>։</span>
+                        <span>500֏</span>
+                    </li>
+                    <li class="h-[2px] bg-[#808080] w-full"></li>
+                    <li class="flex justify-between py-10">
+                        <span>Conference Room</span>
+                        <span>։</span>
+                        <span>5000֏/Ժամ</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="w-2/3 h-[400px] max-lg:w-full">
+                <img class="w-full h-full object-cover" src="/public/images/ezgif-1-de2e8dcb46.webp" alt="">
+            </div>
+        </div>
+    </section>
+    <section class="max-w-screen-xl mx-auto flex flex-col space-y-20 max-lg:px-10">
+        <div class="overflow-hidden rounded-3xl bg-transparent h-[500px] max-lg:h-[300px] w-full shadow-2xl shadow-gray-900">
+            <iframe class="w-full h-full invert-[1] grayscale-[100%]"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d452.52759139302117!2d44.63422128492152!3d40.270626654836995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x406aa135314364f3%3A0xe0e128cc39cfa145!2sAbovAcademy!5e0!3m2!1shy!2s!4v1676374556375!5m2!1shy!2s"
+                style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <div class="flex space-x-20 max-lg:block max-lg:space-x-0">
+            <div class="w-1/3 max-lg:w-full">
+                <h1 class="font-montserrat-bold text-xl">ԹՈՂԵԼ ՄԵԿՆԱԲԱՆՈՒԹՅՈՒՆՆԵՐ</h1>
+                <ul class="font-montserrat">
+                    <li class="flex justify-between py-10">
+                        <span>Հասցե</span>
+                        <span>։</span>
+                        <span>Ք․Աբովյան Սահմանադրության 8/1</span>
+                    </li>
+                    <li class="h-[2px] bg-[#808080] w-full"></li>
+                    <li class="flex justify-between py-10">
+                        <span>Հեռախոսահամար</span>
+                        <span>։</span>
+                        <span><a href="tel:+37493393345">+374 93 39 33 45</a></span>
+                    </li>
+                    <li class="h-[2px] bg-[#808080] w-full"></li>
+                    <li class="flex justify-between py-10">
+                        <span>Էլ․Հասցե։</span>
+                        <span>։</span>
+                        <span><a href="mailto:info@abovacademy.com">info@abovacademy.com</a></span>
+                    </li>
+                    <li class="h-[2px] bg-[#808080] w-full"></li>
+                    <li class="flex justify-between py-10">
+                        <span>Սոց․Կայքեր։</span>
+                        <span>։</span>
+                        <ul class="social__icons text-black">
+                            <li>
+                                <a target="_blank" href="">
+                                    <i class="fa-brands fa-facebook-f"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a target="_blank" href="">
+                                    <i class="fa-brands fa-instagram"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a target="_blank" href="">
+                                    <i class="fa-brands fa-linkedin"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a target="_blank" href="">
+                                    <i class="fa-brands fa-tiktok"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="w-2/3 max-lg:w-full flex flex-col space-y-5">
+                <h1 class="font-montserrat-bold text-xl">ԹՈՂԵԼ ՄԵԿՆԱԲԱՆՈՒԹՅՈՒՆՆԵՐ</h1>
+                <form action="" class="font-montserrat flex flex-col space-y-5">
+                    <div class="flex max-lg:flex-col max-lg:space-x-0 max-lg:space-y-5 space-x-5">
+                        <input
+                            class="w-1/2 max-lg:w-full p-5 border-2 border-[#808080] rounded-xl focus:ring ring-mainColor focus:outline-none focus:border-transparent transition-all duration-300"
+                            type="text" placeholder="Անուն Ազգանուն" required>
+                        <input
+                            class="w-1/2 max-lg:w-full p-5 border-2 border-[#808080] rounded-xl focus:ring ring-mainColor focus:outline-none focus:border-transparent transition-all duration-300"
+                            type="email1" placeholder="Էլ․Հասցե" required>
+                    </div>
+                    <textarea
+                        class="w-full p-5 border-2 border-[#808080] rounded-xl focus:ring ring-mainColor focus:outline-none focus:border-transparent transition-all duration-300"
+                        name="" id="" rows="8" placeholder="Նամակ" required></textarea>
+                    <input type="submit" value="Ուղարկել"
+                        class="cursor-pointer bg-mainColor w-1/4 py-3 rounded-xl text-white hover:bg-[#808080] transition-all duration-300">
+                </form>
+            </div>
+        </div>
+    </section>
+    <!-- Main Content End -->
+
+    <!-- Footer -->
+    <footer class="mt-20">
+        <section class="py-10 bg-[#261f25]/70">
+            <div class="max-w-screen-xl max-lg:px-10 mx-auto flex space-x-3 max-lg:flex-col max-xl:space-x-0 max-lg:space-y-3">
+                <div class="w-1/4 max-lg:w-full text-2xl text-white font-montserrat-extrabold">
+                    <h2>CoWorking Space</h2>
+                </div>
+                <div class="w-1/4 max-lg:w-full text-white max-lg:pb-2 flex flex-col space-y-3 max-lg:border-r-0 max-lg:border-b-2 border-r-2 border-white">
+                    <h2 class="text-lg font-montserrat-bold">Աշխատանքային Ժամեր</h2>
+                    <p class="font-montserrat-semibold">08:00AM - 10:00PM</p>
+                </div>
+                <div class="w-1/4 max-lg:w-full text-white max-lg:pb-2 flex flex-col space-y-3 border-r-2 max-lg:border-r-0 max-lg:border-b-2 border-white">
+                    <h2 class="text-lg font-montserrat-bold">ԳՐԱՍԵՆՅԱԿԻ ԱՇԽԱՏԱԿԻՑ</h2>
+                    <p class="font-montserrat-semibold">523+</p>
+                </div>
+                <div class="w-1/4 max-lg:w-full text-white flex flex-col space-y-3">
+                    <h2 class="text-lg font-montserrat-bold">ԱՇԽԱՏԱՆՔԱՅԻՆ ՏԱՐԱԾՔ</h2>
+                    <p class="font-montserrat-semibold">3500m2</p>
+                </div>
+            </div>
+        </section>
+        <section class="bg-[#261f25]/80 py-10">
+            <div class="max-w-screen-xl mx-auto flex space-x-3 max-lg:flex-col max-lg:space-x-0 max-lg:space-y-3 max-lg:px-10">
+                <div class="w-1/4 max-lg:w-full max-lg:border-r-0 max-lg:pb-2 max-lg:border-b-2 flex items-start justify-start flex-col space-y-3 text-white border-r-2 border-white">
+                    <h2 class="font-montserrat-semibold text-lg">Կայքի Քարտեզ</h2>
+                    <ul class="font-montserrat-light flex flex-col space-y-1">
+                        <li><a class="hover:text-mainColor transition-all duration-300" href="">Փաթեթներ</a></li>
+                        <li><a class="hover:text-mainColor transition-all duration-300" href="">Կապ Մեզ Հետ</a></li>
+                        <li><a class="hover:text-mainColor transition-all duration-300" href="">Ինֆո</a></li>
+                    </ul>
+                </div>
+                <div class="w-2/4 max-lg:w-full max-lg:border-r-0 max-lg:pb-2 max-lg:border-b-2 flex flex-col space-y-3 text-white border-r-2 border-white">
+                    <h2 class="font-montserrat-semibold text-lg">Մեր Մասին</h2>
+                    <p class="font-montserrat-light">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque a fugit, explicabo perspiciatis
+                        asperiores, quod recusandae tempora ipsam accusamus fugiat illo quas alias tempore molestias
+                        ducimus aspernatur temporibus libero consequatur!
+                    </p>
+                </div>
+                <div class="w-1/4 max-lg:w-full flex flex-col space-y-3 text-white">
+                    <h2 class="font-montserrat-semibold text-lg">Սոց․Կայքեր</h2>
+                    <ul class="social__icons">
+                        <li>
+                            <a target="_blank" href="">
+                                <i class="fa-brands fa-facebook-f"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a target="_blank" href="">
+                                <i class="fa-brands fa-instagram"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a target="_blank" href="">
+                                <i class="fa-brands fa-linkedin"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a target="_blank" href="">
+                                <i class="fa-brands fa-tiktok"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section class="bg-[#261f25]/90 py-5">
+            <div class="text-white font-montserrat-bold max-w-screen-xl mx-auto max-lg:px-10">
+                <h3>
+                    Copyright © 2023 CoWorking Space | Powered by Coworking Space
+                </h3>
+            </div>
+        </section>
+    </footer>
+    <!-- Footer End -->
+    <a href="#mastHeader" id="scroll">
+        <span>
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="white"
+                class="w-7 h-7">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                    d="M15.59 14.37a6 6 0 01-5.84 7.38v-4.8m5.84-2.58a14.98 14.98 0 006.16-12.12A14.98 14.98 0 009.631 8.41m5.96 5.96a14.926 14.926 0 01-5.841 2.58m-.119-8.54a6 6 0 00-7.381 5.84h4.8m2.581-5.84a14.927 14.927 0 00-2.58 5.84m2.699 2.7c-.103.021-.207.041-.311.06a15.09 15.09 0 01-2.448-2.448 14.9 14.9 0 01.06-.312m-2.24 2.39a4.493 4.493 0 00-1.757 4.306 4.493 4.493 0 004.306-1.758M16.5 9a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0z" />
+            </svg>
+        </span>
+    </a>
+</body>
+<script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.js"></script>
+<script>
+    baguetteBox.run('.tz-gallery');
+</script>
+<script>
+    // Getting hamburguer menu in small screens
+    const menu = document.getElementById("menu");
+    const ulMenu = document.getElementById("ulMenu");
+
+    function menuToggle() {
+        menu.classList.toggle("h-[160px]");
+    }
+
+    // Browser resize listener
+    window.addEventListener("resize", menuResize);
+
+    // Resize menu if user changing the width with responsive menu opened
+    function menuResize() {
+        // First get the size from the window
+        const window_size = window.innerWidth || document.body.clientWidth;
+        if (window_size > 640) {
+            menu.classList.remove("h-[160px]");
+        }
+    }
+
+    $(document).ready(function () {
+        $(window).scroll(function () {
+            if ($(this).scrollTop() > 100) {
+                $('#scroll').fadeIn();
+            } else {
+                $('#scroll').fadeOut();
+            }
+        });
+    });
+
+    $(document).ready(function () {
+        $(window).scroll(function () {
+            if ($(this).scrollTop() > 10) {
+                $('#mastHeader').removeClass("fixed");
+                $('#header__section').removeClass("top-12");
+                $('#header__section').removeClass("bg-[#808080]/50");
+                $('#mastHeader').addClass("static");
+                $('#header__section').addClass("top-0");
+                $('#header__section').addClass("bg-[#808080]");
+            } else if ($(this).scrollTop() < 0.1) {
+                $('#mastHeader').addClass("fixed");
+                $('#header__section').addClass("top-12");
+                $('#header__section').removeClass("top-0");
+                $('#header__section').addClass("bg-[#808080]/50");
+                $('#header__section').removeClass("bg-[#808080]");
+            }
+        });
+    });
+
+    particlesJS(
+        "elements",
+        {
+            "particles": {
+                "number": {
+                    "value": 60,
+                    "density": {
+                        "enable": true,
+                        "value_area": 1000
+                    }
+                },
+                "color": {
+                    value: ["#000", "#FFDD00", "#333", "#b7d3aa", "#808080"]
+                },
+                "shape": {
+                    "type": "polygon",
+                    "stroke": {
+                        "width": 0,
+                        "color": "#000"
+                    },
+                    "polygon": {
+                        "nb_sides": 5
+                    },
+                },
+                "opacity": {
+                    "value": .3,
+                    "random": true,
+                    "anim": {
+                        "enable": false,
+                        "speed": 1,
+                        "opacity_min": 0.1,
+                        "sync": false
+                    }
+                },
+                "size": {
+                    "value": 25,
+                    "random": true,
+                    "anim": {
+                        "enable": false,
+                        "speed": 30,
+                        "size_min": 2,
+                        "sync": false
+                    }
+                },
+                "line_linked": {
+                    "enable": true,
+                    "distance": 150,
+                    "color": "#ffffff",
+                    "opacity": 0.4,
+                    "width": 1
+                },
+                "move": {
+                    "enable": true,
+                    "speed": 1,
+                    "direction": "bottom",
+                    "random": false,
+                    "straight": true,
+                    "out_mode": "out",
+                    "bounce": false,
+                    "attract": {
+                        "enable": true,
+                        "rotateX": 600,
+                        "rotateY": 1200
+                    }
+                }
+            },
+            "interactivity": {
+                "detect_on": "canvas",
+                "events": {
+                    "onhover": {
+                        "enable": true,
+                        "mode": "repulse"
+                    },
+                    "onclick": {
+                        "enable": true,
+                        "mode": "push"
+                    },
+                    "resize": true
+                },
+                "modes": {
+                    "grab": {
+                        "distance": 400,
+                        "line_linked": {
+                            "opacity": 1
+                        }
+                    },
+                    "bubble": {
+                        "distance": 400,
+                        "size": 40,
+                        "duration": 2,
+                        "opacity": 8,
+                        "speed": 3
+                    },
+                    "repulse": {
+                        "distance": 100,
+                        "duration": 0.4,
+                        "speed": 3
+                    },
+                    "push": {
+                        "particles_nb": 6
+                    },
+                    "remove": {
+                        "particles_nb": 2
+                    }
+                }
+            },
+            "retina_detect": true
+        }
+    );
+    // ScrollReveal().reveal('.text');
+
+</script>
+
+</html>

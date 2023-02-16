@@ -1,0 +1,100 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .header-link {
+        @apply text-white font-montserrat transition-all duration-300 hover:text-blue-400 
+    }
+
+    .social__icons li{
+      @apply transition-all duration-300 hover:text-blue-400 
+    }
+
+    .social__icons {
+      @apply text-white flex space-x-5 text-2xl font-montserrat  
+    }
+}
+
+.before__header{
+    @apply bg-[#808080]/70 py-2 transition-all duration-300 max-lg:hidden
+}
+
+#scroll {
+    @apply  fixed cursor-pointer w-[50px] h-[50px] bg-mainColor indent-[-9999px] hidden rounded-[60px] right-2.5 bottom-2.5 hover:opacity-100;
+    -webkit-border-radius: 60px;
+    -moz-border-radius: 60px;
+}
+
+#scroll span {
+    @apply flex justify-center items-center mt-3 -rotate-[44deg] stroke-white
+}
+  
+#scroll:hover {
+    filter: "alpha(opacity=100)";
+    -ms-filter: "alpha(opacity=100)";
+}
+
+.gallery-container {
+  @apply pt-10
+}
+
+.tz-gallery {
+  @apply pb-10;
+}
+
+.tz-gallery .row > div {
+  @apply p-0.5;
+}
+
+.tz-gallery .lightbox img {
+  @apply w-full relative rounded-none;
+}
+
+.baguetteBox-button {
+  @apply bg-transparent;
+}
+
+
+@layer base {
+    @font-face {
+        font-family: "montserrat";
+        src: url("../public/fonts/Montserratarm-Regular.otf");
+    }
+
+    @font-face {
+        font-family: "montserrat-bold";
+        src: url("../public/fonts/Montserratarm-Bold.otf");
+    }
+
+    @font-face {
+        font-family: "montserrat-extrabold";
+        src: url("../public/fonts/Montserratarm-ExtraBold.otf");
+    }
+
+    @font-face {
+        font-family: "montserrat-extralight";
+        src: url("../public/fonts/Montserratarm-ExtraLight.otf");
+    }
+
+    @font-face {
+        font-family: "montserrat-light";
+        src: url("../public/fonts/Montserratarm-Light.otf");
+    }
+
+    @font-face {
+        font-family: "montserrat-medium";
+        src: url("../public/fonts/Montserratarm-Medium.otf");
+    }
+
+    @font-face {
+        font-family: "montserrat-semibold";
+        src: url("../public/fonts/Montserratarm-SemiBold.otf");
+    }
+
+    @font-face {
+        font-family: "montserrat-thin";
+        src: url("../public/fonts/Montserratarm-Thin.otf");
+    }
+    
+}
